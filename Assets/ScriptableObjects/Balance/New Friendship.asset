@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd1b130c4bb42b99a400669c8d8bb53, type: 3}
+  m_Name: New Friendship
+  m_EditorClassIdentifier: 
+  unitFriends:
+  - unit: 0
+    friendsToMe: 00000000
+  - unit: 1
+    friendsToMe: 01000000

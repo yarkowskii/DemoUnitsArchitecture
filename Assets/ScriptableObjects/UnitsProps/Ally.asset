@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e81c033e9a4c898d64b513065b82ad, type: 3}
+  m_Name: Ally
+  m_EditorClassIdentifier: 
+  fightingPropsSo: {fileID: 11400000, guid: 094cfde28e4dc76458ee065d72905d24, type: 2}
+  movingPropsSo: {fileID: 11400000, guid: b1bf3b0d750851541baf01e6a7ac5515, type: 2}
+  hp: 100
+  modelHeight: 2
