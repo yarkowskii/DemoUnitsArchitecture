@@ -1,4 +1,4 @@
-# DemoUnitsSystem
+# DemoUnitsArchitecture
 It's a demo project of characters' architecture. Characters can moving, fighting and playing some animation
 
 For example, two charaters ('Ally' and 'Guardian') was created.
