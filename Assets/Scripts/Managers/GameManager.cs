@@ -1,11 +1,11 @@
-﻿using ScriptableObjects.Balance;
+﻿using DesignPatterns;
+using ScriptableObjects.Balance;
 using UnityEngine;
 
 namespace Managers
 {
-    public class GameManager : MonoBehaviour
+    public class GameManager : Singleton<GameManager>
     {
-        public static GameManager instance;
 
         public bool IsGame { get; private set; }
 
@@ -15,12 +15,9 @@ namespace Managers
         public AlliesCollection alliesCollection;
         public GuardiansCollections guardiansCollections;
         
-        private void Awake()
+        protected override void Awake()
         {
-            if (instance == null)
-                instance = this;
-            else if (instance != this)
-                Destroy(gameObject);
+            base.Awake();
 
             alliesCollection = new AlliesCollection();
             guardiansCollections = new GuardiansCollections();

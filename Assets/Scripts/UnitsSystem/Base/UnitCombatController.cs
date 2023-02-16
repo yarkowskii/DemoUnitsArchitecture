@@ -87,7 +87,7 @@ namespace UnitsSystem.Base
             targetPos.y = transform.position.y;
             var targetRotation = Quaternion.LookRotation(targetPos - _transform.position);
        
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, GameManager.instance.unitsBalance.lookAtTargetSmoothness * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, GameManager.Instance.unitsBalance.lookAtTargetSmoothness * Time.deltaTime);
         }
 
         private void OnMadeSingleAttack()

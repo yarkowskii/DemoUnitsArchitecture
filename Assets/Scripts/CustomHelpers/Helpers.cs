@@ -8,7 +8,7 @@ namespace CustomHelpers
     {
         public static bool IsFriendly(this UnitType unitTypeA, UnitType unitTypeB)
         {
-            return GameManager.instance.friendshipProps.unitFriends.Find(u => u.unit == unitTypeA).friendsToMe
+            return GameManager.Instance.friendshipProps.unitFriends.Find(u => u.unit == unitTypeA).friendsToMe
                 .Contains(unitTypeB);
         }
     }

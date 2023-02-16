@@ -71,7 +71,7 @@ namespace UnitsSystem.CustomUnits.Ally
             _statesMachine.AddTransition(attackTarget, searchForGuardians, KilledTarget());
             
             _statesMachine.AddAnyTransition(die, () => !IsAlive);
-            _statesMachine.AddAnyTransition(idle, () => !GameManager.instance.IsGame);
+            _statesMachine.AddAnyTransition(idle, () => !GameManager.Instance.IsGame);
 
             Func<bool> FoundTarget() => () => chasingTarget != null && chasingTarget.CanBeDamaged();
             Func<bool> LostTarget() => () => !chasingTarget.CanBeDamaged();
@@ -93,7 +93,7 @@ namespace UnitsSystem.CustomUnits.Ally
             _unitCombatController.SetupFightingController(this, CanAttack(), unitPropsSo.fightingPropsSo);
             _unitCombatController.attackTrigger.triggeredEnterWithIAttackable.AddListener(_unitCombatController.SetupFightTarget);
 
-            GameManager.instance.alliesCollection.AddUnit(this);
+            GameManager.Instance.alliesCollection.AddUnit(this);
             
             died.AddListener(OnDeath);
             

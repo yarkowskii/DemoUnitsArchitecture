@@ -35,7 +35,7 @@ namespace UnitsSystem.CustomUnits.Ally.States
         
         private GuardianController FindNearestGuardian()
         {
-            var nearestGuardian = GameManager.instance.guardiansCollections.FindNearestGuardianFromPosition(_allyController.transform.position);
+            var nearestGuardian = GameManager.Instance.guardiansCollections.FindNearestGuardianFromPosition(_allyController.transform.position);
             return nearestGuardian;
         }
     }

@@ -78,7 +78,7 @@ namespace UnitsSystem.CustomUnits.Guardians
             _unitCombatController.SetupFightingController(this, CanAttack(), unitPropsSo.fightingPropsSo);
             _unitCombatController.attackTrigger.triggeredEnterWithIAttackable.AddListener(_unitCombatController.SetupFightTarget);
 
-            GameManager.instance.guardiansCollections.AddUnit(this);
+            GameManager.Instance.guardiansCollections.AddUnit(this);
             
             died.AddListener(OnDeath);
             
