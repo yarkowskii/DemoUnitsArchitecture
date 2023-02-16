@@ -1,5 +1,5 @@
-# DemoUnitsSystem
-It's a demo project of characters' architecture. Characters can moving, fighting and playing some animation
+# DemoUnitsArchitecture
+It's a small project where the characters system implemented. Characters have base possibilities such as move, fight, play animations, and it can be easily extended
 
 For example, two charaters ('Ally' and 'Guardian') was created.
 
